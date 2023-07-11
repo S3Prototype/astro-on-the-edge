@@ -1,8 +1,5 @@
 ---
 import Layout from '../components/Layout.astro';
-import { inject } from '@vercel/analytics';
- 
-inject();
 const ip = Astro.request.headers.get('x-real-ip')
 const city = decodeURIComponent(Astro.request.headers.get('x-vercel-ip-city'))
 ---
