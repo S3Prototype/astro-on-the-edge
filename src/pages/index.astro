@@ -1,7 +1,10 @@
 ---
 import Layout from '../components/Layout.astro';
+import { mountVercelToolbar } from '@vercel/toolbar';
+
 const ip = Astro.request.headers.get('x-real-ip')
 const city = decodeURIComponent(Astro.request.headers.get('x-vercel-ip-city'))
+mountVercelToolbar();
 ---
 
 <Layout title="Astro Vercel Edge">
