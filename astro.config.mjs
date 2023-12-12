@@ -14,6 +14,7 @@ export default defineConfig({
     },
     imagesConfig: {
       sizes: [100],
+      domains: [''],
     },
     maxDuration: 8,
   })
