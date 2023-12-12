@@ -1,6 +1,9 @@
 ---
-Astro.response.headers.set('Cache-Control', 's-maxage=20, stale-while-revalidate');
+Astro.response.headers.set('Cache-Control', 's-maxage=7, stale-while-revalidate');
 const time = new Date().toLocaleTimeString();
 ---
  
-<h1>{time}</h1>
+<h1>The time below should upate every 7 seconds</h1>
+Hit refresh over and over to see the time stay the same, until 5 seconds pass:
+<br />
+<h2>{time}</h2>
