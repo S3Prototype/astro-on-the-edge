@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@astrojs/vercel': ^3.5.0
+  '@astrojs/vercel': ^3.8.2
   '@vercel/analytics': ^1.0.1
   '@vercel/edge': ^0.3.4
   '@vercel/node': ^3.0.9
