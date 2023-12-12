@@ -1,6 +1,8 @@
 ---
 import Layout from '../components/Layout.astro';
 
+console.log("Locals", Astro.locals);
+
 const ip = Astro.request.headers.get('x-real-ip')
 const city = decodeURIComponent(Astro.request.headers.get('x-vercel-ip-city'))
 ---
