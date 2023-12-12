@@ -8,6 +8,7 @@ export default defineConfig({
     edgeMiddleware: true,
     functionPerRoute: true,
     edgeMiddleware: true,
+    imageService: true,
     webAnalytics: {
       enabled: true
     },
