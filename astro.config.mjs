@@ -5,6 +5,15 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   output: "server",
   adapter: vercel({
-    analytics: true,
-  }),
+    edgeMiddleware: true,
+    functionPerRoute: true,
+    edgeMiddleware: true,
+    webAnalytics: {
+      enabled: true
+    },
+    imagesConfig: {
+      sizes: [100],
+    },
+    maxDuration: 8,
+  })
 });
